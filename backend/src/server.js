@@ -1,0 +1,21 @@
+/**
+ * GET, POST, PUT, DELETE
+ * request.query = Acessar query params (para filtros)
+ * request.params = Acessar route params (para edição, delete)
+ * request.body = Acessar corpo da requisição (para criação, edição)
+ */
+const express = require('express');
+const mongoose = require('mongoose');
+const routes = require('./routes');
+
+const app = express();
+
+mongoose.connect("mongodb+srv://jdrmservices:jdrmservices@cluster0-4gtvr.mongodb.net/semana09?retryWrites=true&w=majority", {
+    useNewUrlParser: true, 
+    useUnifiedTopology: true
+})
+
+app.use(express.json());
+app.use(routes);
+
+app.listen(3333);
