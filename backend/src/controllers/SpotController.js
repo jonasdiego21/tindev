@@ -1,4 +1,3 @@
-const User = require('../models/User');
 const Spot = require('../models/Spot');
 
 module.exports = {
@@ -7,7 +6,7 @@ module.exports = {
 
         const spots = await Spot.find({ techs: tech });
 
-        response.json(spots);
+        return response.json(spots);
     },
 
     async store(request, response) {
