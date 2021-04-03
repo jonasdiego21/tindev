@@ -29,6 +29,6 @@ npm install
 # How to start the project
 ```sh
 npm dev
-``
+```
 
 > In this project, npm build, test and start were not added
