@@ -17,7 +17,7 @@ Searching and connecting developers
   
 ## How to get the project
 ```sh
-git clone git@github.com:jonasdiego21/tindev.git
+git clone https://github.com/jonasdiego21/tindev.git
 ```
 
 ## How to install the dependencies
