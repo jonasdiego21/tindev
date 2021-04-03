@@ -26,7 +26,7 @@ cd tindev
 npm install 
 ```
 
-# How to start the project
+## How to start the project
 ```sh
 npm dev
 ```
